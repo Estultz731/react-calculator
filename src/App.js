@@ -5,22 +5,38 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+       <nav>
+         <a className="link" href="#practice">Practice Calculator</a>
+       </nav>
+       <div className="calculator">
+          <div className="display">
+            <div className="result">0</div>
+          </div>
+          <div className="clear-divide">
+            <div className="clear">Clear</div>
+            <div className="item operator">/</div>
+          </div>
+          <div className="top-number-row">
+            <div className="item number">7</div>
+            <div className="item number">8</div>
+            <div className="item number">9</div>
+            <div className="item operator">+</div>
+          </div>
+          <div className="middle-number-row">
+            <div className="item number">6</div>
+            <div className="item number">5</div>
+            <div className="item number">4</div>
+            <div className="item operator">-</div>
+          </div>
+          <div className="bottom-number-row">
+            <div className="item number">3</div>
+            <div className="item number">2</div>
+            <div className="item number">1</div>
+            <div className="item operator">=</div>
+          </div>
+       </div>
+      </>
     );
   }
 }
