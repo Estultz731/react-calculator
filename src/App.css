@@ -1,33 +1,115 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+nav {
+  background-color:#085add;
+  height: 40px;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 5px 20px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,0.75);
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 7px;
+  margin-bottom: 2em;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  font-size: 15px;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.calculator {
+  height: 400px;
+  width: 400px;
+  border: 1px black solid;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.display {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(58, 65, 58);
+}
+
+.result {
+  margin-right: 10px;
+  font-size: 35px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.clear-divide {
+  display: flex;
+  width: 100%;
+  height: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-number-row {
+  display: flex;
+  width: 100%;
+  height: 20%; 
+}
+
+.middle-number-row {
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+
+.bottom-number-row {
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+
+.item {
+  border: 1px solid black;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: yellow;
+  color: black;
+}
+
+.operator {
+  background-color: red;
+  color: white;
+}
+
+.number {
+  background-color: blue;
+  color: white;
+}
+
+ /* Hover States */
+.clear:hover {
+  transform: scale(1.05);
+  background-color: orange;
+}
+
+.operator:hover{
+  transform: scale(1.05);
+  background-color: purple;
+}
+
+.number:hover{
+  transform: scale(1.05);
+  background-color: green;
 }
