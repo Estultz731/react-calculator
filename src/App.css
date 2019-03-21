@@ -102,14 +102,17 @@ nav {
 .clear:hover {
   transform: scale(1.05);
   background-color: orange;
+  cursor: pointer;
 }
 
 .operator:hover{
   transform: scale(1.05);
   background-color: purple;
+  cursor: pointer;
 }
 
 .number:hover{
   transform: scale(1.05);
   background-color: green;
+  cursor: pointer;
 }
