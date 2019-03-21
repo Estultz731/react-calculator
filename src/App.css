@@ -44,6 +44,8 @@ nav {
   margin-right: 10px;
   font-size: 35px;
   color: white;
+  animation: blink .5s infinite;
+  animation-timing-function: linear;
 }
 
 .clear-divide {
@@ -115,4 +117,12 @@ nav {
   transform: scale(1.05);
   background-color: green;
   cursor: pointer;
+}
+
+/* Animations */
+@keyframes blink {
+  0% { opacity: 0}
+  25% { opacity: 0.25 }
+  75% { opacity: 0.75 } 
+  100% { opacity: 1 }
 }
