@@ -44,7 +44,7 @@ nav {
   margin-right: 10px;
   font-size: 35px;
   color: white;
-  animation: blink .5s infinite;
+  animation: blink 1s infinite;
   animation-timing-function: linear;
 }
 
