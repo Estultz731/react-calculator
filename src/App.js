@@ -4,7 +4,7 @@ import './App.css';
 
 const Nav = () => (
   <nav>
-    <a className='link' href='#practice'>
+    <a className='link' href=''>
       React Calculator
     </a>
   </nav>
